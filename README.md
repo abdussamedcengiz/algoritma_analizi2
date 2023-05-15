@@ -26,16 +26,16 @@ Bundan sonra g ve d dizileri ile function3()'ü çağırır ve elde edilen d diz
 İki kodun zaman karmaşıklıkları ve çalışma süreleri şu şekildedir:
 
 C# Kodu (Floyd-Warshall):
+Bu kod, Floyd-Warshall algoritmasını kullanarak bir yakınlık matrisini çözer. Zaman karmaşıklığı O(n^3) olarak hesaplanır, burada n matrisin boyutudur.
 
+İç içe üç döngü bulunur ve her bir döngü matris boyutu olan n kez döner. Bu nedenle toplam adım sayısı n * n * n = n^3'tür. Bu durumda algoritmanın zaman karmaşıklığı O(n^3) olur.
 Hazırlık İşlemi (PrepareFirstState): O(1)
 Çözüm (Solve): O(n^3)
 Sonuçları Yazdırma (Dump): O(n^2)
 Toplam Zaman Karmaşıklığı: O(n^3)
 
 C ++kodu:
-Bu kod, Floyd-Warshall algoritmasını kullanarak bir yakınlık matrisini çözer. Zaman karmaşıklığı O(n^3) olarak hesaplanır, burada n matrisin boyutudur.
 
-İç içe üç döngü bulunur ve her bir döngü matris boyutu olan n kez döner. Bu nedenle toplam adım sayısı n * n * n = n^3'tür. Bu durumda algoritmanın zaman karmaşıklığı O(n^3) olur.
 A Oluşturma (generate): O(n)
 Fonksiyon 1 (function1): O(n^2)
 Fonksiyon 2 (function2): O(n)
