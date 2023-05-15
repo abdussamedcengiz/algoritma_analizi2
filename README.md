@@ -23,7 +23,27 @@ main() işlevinde, program önce verilen değerlerle bir 2B dizi g başlatır ve
 Ardından, function2()'yi a'ya uygular ve sonucu yazdırır.
 
 Bundan sonra g ve d dizileri ile function3()'ü çağırır ve elde edilen d dizisini yazdırır. Ardından function2()'den elde ettiği ağırlık ile grafiğin köşeleri arasındaki ortalama en kısa mesafeyi bulur ve yazdırır.
+İki kodun zaman karmaşıklıkları ve çalışma süreleri şu şekildedir:
 
+C# Kodu (Floyd-Warshall):
+
+Hazırlık İşlemi (PrepareFirstState): O(1)
+Çözüm (Solve): O(n^3)
+Sonuçları Yazdırma (Dump): O(n^2)
+Toplam Zaman Karmaşıklığı: O(n^3)
+
+C ++kodu:
+Bu kod, Floyd-Warshall algoritmasını kullanarak bir yakınlık matrisini çözer. Zaman karmaşıklığı O(n^3) olarak hesaplanır, burada n matrisin boyutudur.
+
+İç içe üç döngü bulunur ve her bir döngü matris boyutu olan n kez döner. Bu nedenle toplam adım sayısı n * n * n = n^3'tür. Bu durumda algoritmanın zaman karmaşıklığı O(n^3) olur.
+A Oluşturma (generate): O(n)
+Fonksiyon 1 (function1): O(n^2)
+Fonksiyon 2 (function2): O(n)
+Fonksiyon 3 (function3): O(n^3)
+Sonuçları Yazdırma (print1, print2, print3): O(n^2)
+Toplam Zaman Karmaşıklığı: O(n^3)
+
+Her iki kod da Floyd-Warshall algoritmasını uygular ve n^3 zaman karmaşıklığına sahiptir. Dolayısıyla, bu iki kodun çalışma süreleri benzer olacaktır. Ancak, C# kodu daha basit ve okunabilir bir yapıya sahiptir.
 Son olarak programın çalışma süresini hesaplar ve yazdırır.
 Floyd-Warshall algoritması, graf teorisiyle ilgili bir algoritmadır ve tüm çiftler arasındaki en kısa mesafeleri bulmak için kullanılır. Algoritmanın temel adımları şunlardır:
 
