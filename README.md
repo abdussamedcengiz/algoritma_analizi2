@@ -25,3 +25,10 @@ Ardından, function2()'yi a'ya uygular ve sonucu yazdırır.
 Bundan sonra g ve d dizileri ile function3()'ü çağırır ve elde edilen d dizisini yazdırır. Ardından function2()'den elde ettiği ağırlık ile grafiğin köşeleri arasındaki ortalama en kısa mesafeyi bulur ve yazdırır.
 
 Son olarak programın çalışma süresini hesaplar ve yazdırır.
+Floyd-Warshall algoritması, graf teorisiyle ilgili bir algoritmadır ve tüm çiftler arasındaki en kısa mesafeleri bulmak için kullanılır. Algoritmanın temel adımları şunlardır:
+
+Başlangıçta, tüm çiftler arasındaki mesafeleri tutacak bir matris oluşturulur. Mesafelerin bilinmediği durumlar için sonsuz değerler atanır.
+Graf üzerindeki her bir düğüm için, diğer düğümler üzerinden geçerek tüm çiftler arasındaki mesafeleri güncellemek için tüm kombinasyonları değerlendirir.
+Her adımda, geçiş düğümü olarak seçilen düğümler üzerinden geçerek yeni bir en kısa yol olup olmadığı kontrol edilir. Eğer böyle bir yol varsa, matris güncellenir.
+Sonuç olarak, matrisdeki her bir hücrede bulunan değerler, çiftler arasındaki en kısa mesafeleri temsil eder.
+Floyd-Warshall algoritması, tüm düğümler arasındaki en kısa mesafeleri bulmak için kullanılabilir, ancak büyük veri kümeleri için hesaplama maliyeti yüksek olabilir.
