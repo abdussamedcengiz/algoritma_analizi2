@@ -1,4 +1,3 @@
-c# kodu:
 using System;
 using System.Linq;
  
