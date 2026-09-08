@@ -1,4 +1,30 @@
-# algoritma_analizi2
+# Algoritma Analizi Odevi
+
+Uc algoritmanin bir arada uygulandigi ve calisma karmasikliklarinin
+incelendigi odev.
+
+## Kod dosyalari
+
+| Dosya | Icerik |
+|---|---|
+| `c++ dilinde kod.txt` | Ana program: rastgele dizi uretimi, kabarcik siralama (`function1`), en yuksek ortalamali alt dizi toplami (`function2`) ve tum kose ciftleri arasindaki en kisa yollar (`function3`) |
+| `c# kodu.txt` | Ayni en kisa yol probleminin **Floyd-Warshall** algoritmasiyla C# uygulamasi |
+
+Ana program C sozdizimiyle yazilmis (`stdio.h` kullaniyor); dosya adindaki
+"c++" ifadesine ragmen C derleyicisiyle de derlenebiliyor.
+
+## Calistirma
+
+```bash
+g++ "c++ dilinde kod.txt" -o analiz && ./analiz
+```
+
+> Kod dosyalari `.txt` uzantisiyla kaydedildigi icin GitHub bunlari renkli
+> gostermiyor ve derleyiciye dosya adi tirnak icinde verilmek zorunda.
+
+---
+
+## Odev raporu
  
 Program C++ dilinde yazılmış olup dört fonksiyon ve bir ana fonksiyondan oluşmaktadır.
 
