@@ -7,20 +7,18 @@ incelendigi odev.
 
 | Dosya | Icerik |
 |---|---|
-| `c++ dilinde kod.txt` | Ana program: rastgele dizi uretimi, kabarcik siralama (`function1`), en yuksek ortalamali alt dizi toplami (`function2`) ve tum kose ciftleri arasindaki en kisa yollar (`function3`) |
-| `c# kodu.txt` | Ayni en kisa yol probleminin **Floyd-Warshall** algoritmasiyla C# uygulamasi |
+| `algoritma_analizi.c` | Ana program: rastgele dizi uretimi, kabarcik siralama (`function1`), en yuksek ortalamali alt dizi toplami (`function2`) ve tum kose ciftleri arasindaki en kisa yollar (`function3`) |
+| `FloydWarshall.cs` | Ayni en kisa yol probleminin **Floyd-Warshall** algoritmasiyla C# uygulamasi |
 
-Ana program C sozdizimiyle yazilmis (`stdio.h` kullaniyor); dosya adindaki
-"c++" ifadesine ragmen C derleyicisiyle de derlenebiliyor.
+Ana program C sozdizimiyle yazilmis (`stdio.h` kullaniyor); daha once dosya
+adi "c++ dilinde kod.txt" idi, gercek dile gore `.c` olarak yeniden
+adlandirildi.
 
 ## Calistirma
 
 ```bash
-g++ "c++ dilinde kod.txt" -o analiz && ./analiz
+gcc algoritma_analizi.c -o analiz && ./analiz
 ```
-
-> Kod dosyalari `.txt` uzantisiyla kaydedildigi icin GitHub bunlari renkli
-> gostermiyor ve derleyiciye dosya adi tirnak icinde verilmek zorunda.
 
 ---
 
